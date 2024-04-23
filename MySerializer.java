@@ -1,4 +1,6 @@
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class MySerializer {
 	private MySerializableClass mySerializableClass;
@@ -20,7 +22,7 @@ public class MySerializer {
 	public void write(String text) throws IOException {
 		mySerializableClass.set(text);
 		String filename=readFilename();
-		
+
 		// Implementierung erforderlich
 		// Serialisiere mySerializableClass in Datei
 		
